@@ -1,18 +1,18 @@
 {% set name = "precession" %}
-{% set version = "1.0.3" %}
+{% set version = "2.0.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 792bf8e3441c4ea012b91d278eca00bb134bcb94a601716491884935648d7bec
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 20e8d6c30df1b94a1d932436c94c2615ec99c7e7b2dc6625a38f6a3b21c832da
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,11 +35,11 @@ test:
     - pip
 
 about:
-  home: "https://github.com/dgerosa/precession/"
+  home: https://github.com/dgerosa/precession/
   license: CC-BY-4.0
   license_family: CC
   license_file: LICENSE.txt
-  summary: "Dynamics of precessing black-hole binaries"
+  summary: Dynamics of precessing black-hole binaries
   doc_url: https://pypi.org/project/precession/
   dev_url: https://github.com/dgerosa/precession/
 
