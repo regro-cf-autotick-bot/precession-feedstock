@@ -1,11 +1,11 @@
-About precession
-================
+About precession-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/precession-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dgerosa/precession/
 
 Package license: CC-BY-4.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/precession-feedstock/blob/main/LICENSE.txt)
 
 Summary: Dynamics of precessing black-hole binaries
 
