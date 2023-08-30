@@ -1,5 +1,5 @@
 {% set name = "precession" %}
-{% set version = "1.0.3" %}
+{% set version = "2.0.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 792bf8e3441c4ea012b91d278eca00bb134bcb94a601716491884935648d7bec
+  sha256: 9b420843cdca603bc3cadfad49fc21b570f133e75de663437666b870398941cf
 
 build:
   number: 0
@@ -28,7 +28,6 @@ requirements:
 test:
   imports:
     - precession
-    - precession.test
   commands:
     - pip check
   requires:
