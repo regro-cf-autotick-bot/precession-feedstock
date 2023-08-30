@@ -28,7 +28,6 @@ requirements:
 test:
   imports:
     - precession
-    - precession.test
   commands:
     - pip check
   requires:
